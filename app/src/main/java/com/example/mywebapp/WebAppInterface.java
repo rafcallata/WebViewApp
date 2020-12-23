@@ -3,8 +3,14 @@ package com.example.mywebapp;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.Color;
+import android.view.View;
 import android.webkit.JavascriptInterface;
+import android.webkit.WebView;
 import android.widget.Toast;
+
+import com.google.android.material.snackbar.BaseTransientBottomBar;
+import com.google.android.material.snackbar.Snackbar;
 
 public class WebAppInterface {
     Context context;
@@ -16,7 +22,6 @@ public class WebAppInterface {
     @JavascriptInterface
     public void showToastMessage(String message){
 
-        //Esto es lo que se hiso en clase para que muestre el mensaje creado
         //Toast.makeText(context,message,Toast.LENGTH_SHORT).show();
 
         //esto crara una ventana emergente donde al hacer click para que muestre el mensaje que quereos que muestre
